@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btGerenciar = new System.Windows.Forms.Button();
+            this.btVotar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btGerenciar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.button1.Location = new System.Drawing.Point(52, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(373, 105);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "&Gerenciar Papáveis";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btGerenciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btGerenciar.Location = new System.Drawing.Point(52, 37);
+            this.btGerenciar.Name = "btGerenciar";
+            this.btGerenciar.Size = new System.Drawing.Size(373, 105);
+            this.btGerenciar.TabIndex = 0;
+            this.btGerenciar.Text = "&Gerenciar Papáveis";
+            this.btGerenciar.UseVisualStyleBackColor = true;
+            this.btGerenciar.Click += new System.EventHandler(this.btGerenciar_Click);
             // 
-            // button2
+            // btVotar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.button2.Location = new System.Drawing.Point(52, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(373, 105);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "&Votar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btVotar.Location = new System.Drawing.Point(52, 170);
+            this.btVotar.Name = "btVotar";
+            this.btVotar.Size = new System.Drawing.Size(373, 105);
+            this.btVotar.TabIndex = 1;
+            this.btVotar.Text = "&Votar";
+            this.btVotar.UseVisualStyleBackColor = true;
+            this.btVotar.Click += new System.EventHandler(this.btVotar_Click);
             // 
             // button3
             // 
@@ -70,8 +71,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(477, 450);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btVotar);
+            this.Controls.Add(this.btGerenciar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -80,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btGerenciar;
+        private System.Windows.Forms.Button btVotar;
         private System.Windows.Forms.Button button3;
     }
 }

@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvPapaveis = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btAdicionar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapaveis)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,22 +41,11 @@
             // 
             this.dgvPapaveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPapaveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
             this.Nome});
             this.dgvPapaveis.Location = new System.Drawing.Point(19, 21);
             this.dgvPapaveis.Name = "dgvPapaveis";
             this.dgvPapaveis.Size = new System.Drawing.Size(452, 409);
             this.dgvPapaveis.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
             // 
             // label1
             // 
@@ -98,6 +86,11 @@
             this.button2.Text = "E&xcluir";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
             // frmGerenciar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,7 +117,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btAdicionar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
     }
 }
