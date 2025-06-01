@@ -4,26 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conclave
+namespace conclave
 {
-    public class Funcoes
-    { 
-        public static int Lenght(string[][] v)
+    internal class funcoes
+    {
+        public static int Length(string[][] vetor)
         {
             int q = 0;
-            for (int i = 0; i < v.Length; i++)
+            for (int i = 0; i < vetor.Length; i++)
             {
-                if (v[i] != null)
+                if (vetor[i] != null)
+                {
                     q++;
+                }
             }
             return q;
         }
-        public static int Buscar(string[][] vetor, string nome)
+        public static int buscar(string[][] vetor, string nome)
         {
-            int indice = 0;
-            for (int i = 0; i < Funcoes.Lenght(vetor) && vetor[i][0] != nome; indice++)
-                if (indice < Funcoes.Lenght(vetor))
-                    return indice;
+            int indice;
+            for (indice = 0; indice < Length(vetor) && vetor[indice][0] != nome; indice++) ;
+            if (indice < Length(vetor))
+                return indice;
             return -1;
         }
     }

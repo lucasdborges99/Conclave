@@ -1,4 +1,4 @@
-﻿namespace Conclave
+﻿namespace conclave
 {
     partial class frmGerenciar
     {
@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btAdicionar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapaveis)).BeginInit();
             this.SuspendLayout();
@@ -78,13 +78,13 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button2.Location = new System.Drawing.Point(495, 272);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 158);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "E&xcluir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.btExcluir.Location = new System.Drawing.Point(495, 272);
+            this.btExcluir.Name = "button2";
+            this.btExcluir.Size = new System.Drawing.Size(278, 158);
+            this.btExcluir.TabIndex = 4;
+            this.btExcluir.Text = "E&xcluir";
+            this.btExcluir.UseVisualStyleBackColor = true;
             // 
             // Nome
             // 
@@ -96,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btAdicionar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Conclave
+﻿namespace conclave
 {
     partial class FrmVotar
     {
